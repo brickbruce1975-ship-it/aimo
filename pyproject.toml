@@ -9,7 +9,7 @@ requires-python = ">=3.11"
 # CUDA build, while `uv sync` on a laptop installs the default wheel for your
 # platform, which also runs on CPU.
 dependencies = [
-    "accelerate==1.13.0",
+    "accelerate==1.15.0",
     "huggingface-hub==1.22.0",
     "joblib==1.5.3",
     "pandas==3.0.3",
@@ -17,7 +17,7 @@ dependencies = [
     "scikit-learn==1.8.0",
     "tokenizers==0.22.2",
     "transformers==5.13.0",
-    "torch~=2.12.1",
+    "torch>=2.12.1,<2.14.0",
 ]
 
 # Local tooling only — NOT part of the evaluation runtime. pyarrow lets the
